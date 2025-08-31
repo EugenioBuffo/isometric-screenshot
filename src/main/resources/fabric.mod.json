@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "isometric-screenshot",
+  "version": "${version}",
+  "name": "Isometric Screenshot",
+  "description": "MC mod to take isometric screenshot",
+  "authors": ["Eugenio Buffo"],
+  "contact": {
+    "homepage": "https://www.eugeniobuffo.it",
+    "sources": "https://github.com/eugeniobuffo/isometric-screenshot"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/isometric-screenshot/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["it.eugeniobuffo.isometric.IsometricScreenshot"],
+    "fabric-datagen": ["it.eugeniobuffo.isometric.IsometricScreenshotDataGenerator"],
+    "client": ["it.eugeniobuffo.isometric.IsometricScreenshotClient"]
+  },
+  "mixins": ["isometric-screenshot.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.8",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
